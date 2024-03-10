@@ -1,6 +1,9 @@
 # Teste Log.One
 
 Projeto realizado como teste técnico para a vaga de desenvolvedor Java na empresa Log.One. O projeto também está disponível no seguinte [link](http://teste-logone.us-east-1.elasticbeanstalk.com/).
+
+Vìdeo explicatório sobre o projeto disponível [aqui](https://youtu.be/bvi-Rxjjrnw?si=3-25ciE2Yu2Qe70q).
+
 ## Funcionalidades da aplicação
 
 - **Cadastro de solicitantes:** Permite cadastrar novos solicitantes.
