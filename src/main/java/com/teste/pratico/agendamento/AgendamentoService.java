@@ -53,7 +53,7 @@ class AgendamentoService {
        vagasDisponiveis.stream()
             .filter(vaga -> vaga.getQuantidade() > 0)
             .findFirst()
-            .ifPresent(vaga -> vaga.setQuantidade(vaga.getQuantidade() - 1););
+            .ifPresent(vaga -> vaga.setQuantidade(vaga.getQuantidade() - 1));
     }
 
     public List<Agendamento> buscarAgendamentosPorPeriodo(LocalDate dataInicio, LocalDate dataFim) {
