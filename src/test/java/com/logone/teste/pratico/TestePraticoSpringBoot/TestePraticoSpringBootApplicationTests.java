@@ -3,7 +3,7 @@ package com.logone.teste.pratico.TestePraticoSpringBoot;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = TestePraticoSpringBootApplication.class)
+@SpringBootTest(classes = TestePraticoSpringBootApplicationTests.class)
 class TestePraticoSpringBootApplicationTests {
 
     @Test
