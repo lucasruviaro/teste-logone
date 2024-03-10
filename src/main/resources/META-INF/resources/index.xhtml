@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/template.xhtml">
+    <ui:define name="content">
+        <div style="display: flex;">
+            <div style="flex: 1;">
+                <h:form>
+                    <p:panel header="Consulta de Agendamentos">
+                        <p:panelGrid id="panelGrid" columns="2">
+                            <p:outputLabel for="dataInicioConsulta" value="Data de início:"/>
+                            <p:calendar id="dataInicioConsulta" value="#{agendamentoBean.dataInicio}" showOn="button" required="true"/>
+
+                            <p:outputLabel for="dataFimConsulta" value="Data de término:"/>
+                            <p:calendar id="dataFimConsulta" value="#{agendamentoBean.dataFim}" showOn="button" required="true"/>
+                        </p:panelGrid>
+                        <br/>
+                        <p:commandButton value="Consultar" action="#{agendamentoBean.buscarAgendamentoPorPeriodo}" process="@form" update="panelGrid,dataTable,@form" />
+                    </p:panel>
+                    <p:growl id="growl" showDetail="false" />
+                </h:form>
+            </div>
+            <div style="flex: 2;">
+                <p:dataTable id="dataTable" value="#{agendamentoBean.agendamentos}" var="agendamento" emptyMessage="Nenhum agendamento encontrado">
+                    <p:column headerText="Solicitante">
+                        <h:outputText value="#{agendamento.solicitante.nome}" />
+                    </p:column>
+                    <p:column headerText="Data">
+                        <h:outputText value="#{agendamento.data}" />
+                    </p:column>
+                    <p:column headerText="Número">
+                        <h:outputText value="#{agendamento.numero}" />
+                    </p:column>
+                    <p:column headerText="Motivo">
+                        <h:outputText value="#{agendamento.motivo}" />
+                    </p:column>
+                </p:dataTable>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>
+</html>
