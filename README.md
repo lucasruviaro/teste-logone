@@ -4,10 +4,10 @@ Projeto realizado como teste técnico para a vaga de desenvolvedor Java na empre
 
 ## Funcionalidades da aplicação
 
-- **Cadastro:** Permite cadastrar novos itens relacionados ao XYZ.
-- **Edição:** Permite editar os itens existentes.
-- **Exclusão:** Permite excluir itens do sistema.
-- **Consulta:** Permite realizar consultas para visualizar os dados cadastrados.
+- **Cadastro de solicitante:** Permite cadastrar novos solicitantes.
+- **Cadastro de vagas:** Permite cadastrar novas vagas dentro de um período específico.
+- **Cadastro de agendamentos:** Permite cadastrar agendamentos com data específica.
+- **Consulta de agendamentos:** Permite realizar consultas agendamentos realizados dentro de um período específico.
 
 ## Tecnologias Utilizadas
 
