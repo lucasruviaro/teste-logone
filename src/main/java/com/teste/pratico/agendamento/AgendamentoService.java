@@ -50,8 +50,10 @@ class AgendamentoService {
     }
 
     private static void atualizaNumeroVagasAposAgendamento(List<Vaga> vagasDisponiveis) {
-        Vaga vaga = vagasDisponiveis.get(0);
-        vaga.setQuantidade(vaga.getQuantidade() - 1);
+       vagasDisponiveis.stream()
+            .filter(vaga -> vaga.getQuantidade() > 0)
+            .findFirst()
+            .ifPresent(vaga -> vaga.setQuantidade(vaga.getQuantidade() - 1););
     }
 
     public List<Agendamento> buscarAgendamentosPorPeriodo(LocalDate dataInicio, LocalDate dataFim) {
