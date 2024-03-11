@@ -41,4 +41,17 @@ Como comentado nas entrevistas, como tenho experiência com ambientes cloud como
 
 ![image](https://github.com/lucasruviaro/teste-logone/assets/103154696/2519c109-94b5-402b-9873-bc43b42b739c)
 
+## Iniciando a aplicação localmente
+
+### Clone o repositório do GitHub
+git clone https://github.com/lucasruviaro/teste-logone.git
+
+### Navegue até o diretório do projeto clonado
+cd teste-logone
+
+### Execute o projeto Spring Boot com Maven
+mvn spring-boot:run
+
+localhost:9292 (no documento do teste estava 9494, mas a aplicação estava configurada como 9292).
+
 
