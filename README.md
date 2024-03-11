@@ -4,6 +4,18 @@ Projeto realizado como teste técnico para a vaga de desenvolvedor Java na empre
 
 Vìdeo explicatório sobre o projeto disponível [aqui](https://youtu.be/bvi-Rxjjrnw?si=3-25ciE2Yu2Qe70q).
 
+## Introdução ao projeto
+
+Para integrar o JSF com o Spring Boot, optei por utilizar a biblioteca JoinFaces, simplificando consideravelmente a configuração. Graças a ela, não precisei lidar diretamente com arquivos como web.xml e faces-config.xml. Além disso, para manter o código limpo e prevenir possíveis bugs, adotei o plugin SonarLint no IntelliJ.
+
+Em relação à estruturação do projeto, optei por uma abordagem diferente, organizando as classes e interfaces em "domains" em vez de dividir em camadas tradicionais como repository, service e entities. Essa escolha foi feita com intuito de evitar a exposição desnecessária de classes e interfaces como públicas. Por exemplo, defini a camada de entities e repository com o modificador de acesso padrão, visando encapsular e desacoplar o código de forma mais eficiente.
+
+## Tecnologias Utilizadas
+
+- Spring Boot
+- JSF
+- HyperSQL
+
 ## Funcionalidades da aplicação
 
 - **Cadastro de solicitantes:** Permite cadastrar novos solicitantes.
@@ -21,14 +33,7 @@ Vìdeo explicatório sobre o projeto disponível [aqui](https://youtu.be/bvi-Rxj
 - **Consulta de agendamentos:** Permite realizar consultas agendamentos realizados dentro de um período específico.
 
   ![image](https://github.com/lucasruviaro/teste-logone/assets/103154696/ad0e9294-c47a-49ab-b58a-2b4fba786293)
-
-
-
-## Tecnologias Utilizadas
-
-- Spring
-- JSF
-- HyperSQL
+  
 
 ## Deploy da aplicação
 
